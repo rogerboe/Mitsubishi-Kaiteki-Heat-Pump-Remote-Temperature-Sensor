@@ -207,5 +207,41 @@ Without this, ESP will override MELCloud commands.
 🔧 Production-ready setup
 🚀 Ready for expansion
 
+## Bill of Materials (BOM)
+
+- 2x ESP32-C3 SuperMini (with OLED)
+- 1x DS18B20 temperature sensor
+- 1x 4.7kΩ resistor (sensor pull-up)
+- 1x 10kΩ resistor (CN105 pull-up)
+- 1x 1kΩ resistor (TX protection)
+- CN105 connector (JST PAP-05V-S)
+- Jumper wires
+
+
+## Troubleshooting
+
+### ESP-B does not connect to ESP-A
+- Check BLE UUIDs match
+- Check device name "KaitekiSensor"
+
+### No UART data from CN105
+- Verify 4.7k–10k pull-up on TX
+- Ensure 2400 baud, 8E1
+
+### Heat pump turns itself back ON
+- Missing: hp.enableExternalUpdate()
+
+### Temperature not affecting behavior
+- Ensure injection only when HP is ON
+- Verify BLE data is fresh
+
+## Tested With
+
+- Mitsubishi MSZ-LN35VGB (Kaiteki Nordic)
+- ESP32-C3 SuperMini (OLED version)
+- DS18B20 sensor
+
+  
+
 
 
