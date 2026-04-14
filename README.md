@@ -1,5 +1,8 @@
 🌡️ Mitsubishi Kaiteki External Temperature Sensor (CN105 + ESP32-C3)
 
+## Version
+v1.0 – External temperature injection working (BLE + CN105)
+
 📖 Overview
 
 This project replaces the internal temperature sensing behavior of a Mitsubishi Kaiteki (MSZ-LN series) heat pump by injecting an external room temperature via the CN105 service port.
