@@ -1,0 +1,14 @@
+# Arduino build files
+*.ino.cpp
+*.elf
+*.bin
+*.map
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
+
+# VSCode / editors
+.vscode/
